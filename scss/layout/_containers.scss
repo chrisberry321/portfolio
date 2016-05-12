@@ -1,0 +1,27 @@
+
+html {
+  background: linear-gradient(rgba($background-overlay, 0.30), rgba($background-overlay, 0.30)),url(../img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  width: 500px;
+  background-color: black;
+  opacity: .8;
+  border-radius: 4px;
+  margin-top: 30vh;
+  margin-left: 15vw;
+
+
+}
+h1 {
+  align-self: center;
+  text-align: center;
+  color: white;
+}
