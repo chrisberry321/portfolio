@@ -1,6 +1,6 @@
 
 html {
-  background: linear-gradient(rgba($background-overlay, 0.30), rgba($background-overlay, 0.30)),url(../img/background.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba($background-overlay, 0.30), rgba($background-overlay, 0.30)),url(../img/background.jpg) no-repeat right bottom fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10,7 +10,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
+  background-image: linear-gradient(270deg, #222 0%, #000 47%);
   opacity: .8;
 }
 .nav {
@@ -19,22 +19,21 @@ html {
   justify-content: space-around;
   height: 100px;
   width: 100vw;
-  background-color: black;
-  opacity: .8;
-  border-radius: 4px;
 
   a {
     display: flex;
     align-self: center;
     text-decoration: none;
     color: white;
-    border: 2px solid red;
+    padding: 0 20px;
+    margin: 0 20px;
+    // border: 2px solid red;
 
     h1 {
       flex: 2;
       align-self: center;
       font-style: tahoma;
-      font-size: 52px;
+      font-size: 40px;
       color: white;
       font: $tahoma;
     }
@@ -44,7 +43,8 @@ html {
       color: white;
       font: $tahoma;
       font-size: 28px;
-      padding: 0 10px;
+
+      text-shadow: 1px 2px 2px rgba(0,0,0,0.50);
 
     }
   }
