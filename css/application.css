@@ -5,10 +5,10 @@ html {
   -o-background-size: cover;
   background-size: cover; }
 
+body {
+  margin: 0; }
+
 .nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
   background-image: linear-gradient(270deg, #222 0%, #000 47%);
   opacity: .8; }
 
@@ -25,11 +25,16 @@ html {
     color: white;
     padding: 0 20px;
     margin: 0 20px; }
+    .nav a :hover {
+      color: #999;
+      transition: 1s, ease-in-out;
+      transform: scale(1.05); }
     .nav a h1 {
       flex: 2;
       align-self: center;
       font-style: tahoma;
       font-size: 40px;
+      min-width: 276px;
       color: white;
       font: tahoma, Helvetica, Arial, sans-serif; }
     .nav a p {
@@ -39,5 +44,22 @@ html {
       font: tahoma, Helvetica, Arial, sans-serif;
       font-size: 28px;
       text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5); }
+
+.aboutContent, .background, .resume, .portfolio {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 28px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 10px; }
+  .aboutContent p, .background p, .resume p, .portfolio p {
+    margin: 15px 20px; }
+  .aboutContent a, .background a, .resume a, .portfolio a {
+    color: black;
+    text-decoration: none; }
+  .aboutContent li, .background li, .resume li, .portfolio li {
+    list-style: none;
+    padding: 20px; }
 
 /*# sourceMappingURL=application.css.map */
